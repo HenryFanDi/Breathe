@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D8E8856C1D01C4C1002851A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E8856B1D01C4C1002851A3 /* AppDelegate.swift */; };
-		D8E8856E1D01C4C1002851A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E8856D1D01C4C1002851A3 /* ViewController.swift */; };
-		D8E885711D01C4C1002851A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E8856F1D01C4C1002851A3 /* Main.storyboard */; };
 		D8E885741D01C4C1002851A3 /* Breathe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8E885721D01C4C1002851A3 /* Breathe.xcdatamodeld */; };
 		D8E885761D01C4C1002851A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E885751D01C4C1002851A3 /* Assets.xcassets */; };
 		D8E885791D01C4C1002851A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E885771D01C4C1002851A3 /* LaunchScreen.storyboard */; };
 		D8E885841D01C4C1002851A3 /* BreatheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E885831D01C4C1002851A3 /* BreatheTests.swift */; };
 		D8E8858F1D01C4C1002851A3 /* BreatheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E8858E1D01C4C1002851A3 /* BreatheUITests.swift */; };
+		D8FE2C8C1D045D8B00FBD8B3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FE2C8A1D045D8B00FBD8B3 /* MainViewController.swift */; };
+		D8FE2C8D1D045D8B00FBD8B3 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8FE2C8B1D045D8B00FBD8B3 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 /* Begin PBXFileReference section */
 		D8E885681D01C4C1002851A3 /* Breathe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breathe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E8856B1D01C4C1002851A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8E8856D1D01C4C1002851A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D8E885701D01C4C1002851A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8E885731D01C4C1002851A3 /* Breathe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Breathe.xcdatamodel; sourceTree = "<group>"; };
 		D8E885751D01C4C1002851A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8E885781D01C4C1002851A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		D8E8858A1D01C4C1002851A3 /* BreatheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreatheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E8858E1D01C4C1002851A3 /* BreatheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheUITests.swift; sourceTree = "<group>"; };
 		D8E885901D01C4C1002851A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8FE2C8A1D045D8B00FBD8B3 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D8FE2C8B1D045D8B00FBD8B3 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				D8E8856B1D01C4C1002851A3 /* AppDelegate.swift */,
-				D8E8856D1D01C4C1002851A3 /* ViewController.swift */,
-				D8E8856F1D01C4C1002851A3 /* Main.storyboard */,
+				D8FE2C8A1D045D8B00FBD8B3 /* MainViewController.swift */,
+				D8FE2C8B1D045D8B00FBD8B3 /* MainViewController.xib */,
 				D8E885751D01C4C1002851A3 /* Assets.xcassets */,
 				D8E885771D01C4C1002851A3 /* LaunchScreen.storyboard */,
 				D8E8857A1D01C4C1002851A3 /* Info.plist */,
@@ -234,7 +234,7 @@
 			files = (
 				D8E885791D01C4C1002851A3 /* LaunchScreen.storyboard in Resources */,
 				D8E885761D01C4C1002851A3 /* Assets.xcassets in Resources */,
-				D8E885711D01C4C1002851A3 /* Main.storyboard in Resources */,
+				D8FE2C8D1D045D8B00FBD8B3 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E8856E1D01C4C1002851A3 /* ViewController.swift in Sources */,
 				D8E885741D01C4C1002851A3 /* Breathe.xcdatamodeld in Sources */,
 				D8E8856C1D01C4C1002851A3 /* AppDelegate.swift in Sources */,
+				D8FE2C8C1D045D8B00FBD8B3 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D8E8856F1D01C4C1002851A3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8E885701D01C4C1002851A3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D8E885771D01C4C1002851A3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -486,6 +478,7 @@
 				D8E885951D01C4C1002851A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8E885961D01C4C1002851A3 /* Build configuration list for PBXNativeTarget "BreatheTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +487,7 @@
 				D8E885981D01C4C1002851A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8E885991D01C4C1002851A3 /* Build configuration list for PBXNativeTarget "BreatheUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +496,7 @@
 				D8E8859B1D01C4C1002851A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
