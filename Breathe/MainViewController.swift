@@ -25,19 +25,19 @@ class MainViewController: UIViewController {
   
   // MARK: Private
   
-  private func setupMainViewController() {
+  fileprivate func setupMainViewController() {
     setupBreathView()
   }
   
-  private func setupBreathView() {
-    breathView.backgroundColor = UIColor.whiteColor()
+  fileprivate func setupBreathView() {
+    breathView.backgroundColor = UIColor.white
     breathView.alpha = 0.5
-    breathView.layer.cornerRadius = CGRectGetHeight(breathView.frame) / 2.0
+    breathView.layer.cornerRadius = breathView.frame.height / 2.0
     
     unowned let unownedSelf = self
-    UIView.transitionWithView(breathView,
+    UIView.transition(with: breathView,
                               duration: 2.0,
-                              options: [.Autoreverse, .Repeat],
+                              options: [.autoreverse, .repeat],
                               animations:
     {
       unownedSelf.breathView.alpha = 0.9
